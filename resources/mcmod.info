@@ -1,0 +1,12 @@
+[
+	{
+		"modid": "themagicmod",
+		"name": "The Magic Mod",
+		"description": "A very magical magic mod",
+		"version": "${version}",
+		"mcversion": "${mcversion}",
+		"url": "",
+		"authors": ["Celestial Code"],
+		"credits": ""
+	}
+]

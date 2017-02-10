@@ -1,0 +1,6 @@
+{
+    "parent": "themagicmod:block/tutorial_custommodel",
+    "textures": {
+        "layer0": "themagicmod:blocks/tutorial_custommodel"
+    }
+}

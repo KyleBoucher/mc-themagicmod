@@ -1,8 +1,9 @@
 package com.celestialcode.themagicmod;
 
-import com.celestialcode.themagicmod.init.ModItems;
+import com.celestialcode.themagicmod.lib.Names;
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -17,12 +18,21 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void init(FMLInitializationEvent event) {
 		super.init(event);
-		
-		ModItems.initClient(Minecraft.getMinecraft().getRenderItem().getItemModelMesher());
 	}
 	
 	@Override
 	public void postInit(FMLPostInitializationEvent event) {
 		super.postInit(event);
+	}
+	
+	@Override
+	public void registerItemRenderer(Item itemBase, int meta, String name) {
+		ModelResourceLocation modResource = new ModelResourceLocation(
+				TheMagicMod.RESOURCE_PREFIX + name, "inventory");
+		ModelLoader.setCustomModelResourceLocation(
+				itemBase, 
+				meta,
+				modResource
+				);
 	}
 }

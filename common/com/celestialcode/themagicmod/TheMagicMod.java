@@ -1,5 +1,7 @@
 package com.celestialcode.themagicmod;
 
+import com.celestialcode.themagicmod.init.TutorialTab;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -26,10 +28,12 @@ public class TheMagicMod {
 	@Instance(MODID)
 	public static TheMagicMod instance;
 	
-	// functions
 	@SidedProxy(clientSide="com.celestialcode.themagicmod.ClientProxy", serverSide="com.celestialcode.themagicmod.CommonProxy")
 	public static CommonProxy proxy;
 	
+	public static final TutorialTab creativeTab = new TutorialTab();
+	
+	// functions
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit(event);

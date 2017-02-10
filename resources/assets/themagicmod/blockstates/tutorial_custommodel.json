@@ -1,0 +1,12 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "normal": { 
+			"model": "themagicmod:tutorial_custommodel"
+		},
+		"inventory": {
+			"model": "themagicmod:tutorial_custommodel",
+			"transform": "forge:default-block"
+		}
+    }
+}

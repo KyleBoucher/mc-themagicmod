@@ -1,0 +1,6 @@
+{
+  "parent": "themagicmod:block/tutorial_ore",
+  "textures": {
+    "layer0": "themagicmod:blocks/tutorial_ore"
+  }
+}

@@ -1,1 +1,12 @@
+# Items
 item.themagicmod:tutorial_item.name=Tutorial Item
+item.themagicmod:tutorial_seed.name=Tutorial Seed
+item.themagicmod:tutorial_food.name=Tutorial Food
+
+# Blocks
+tile.themagicmod:tutorial_ore.name=Tutorial Ore
+tile.themagicmod:tutorial_crop.name=Tutorial Crop
+tile.themagicmod:tutorial_custommodel.name=Tutorial Custom Model
+
+# Item Groups
+itemGroup.themagicmod=The Magic Mod
